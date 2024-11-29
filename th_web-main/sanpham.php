@@ -91,7 +91,7 @@ padding: 0px 10px 0px 10px;
                             <th>Kích Thước</th>
                             <th>Người Đăng</th>
                             <th>Loại Áo</th>
-                            
+                            <th>Số Lượng</th>
                            
                         </tr>
                     </thead>
@@ -158,8 +158,9 @@ padding: 0px 10px 0px 10px;
                                 <td>
                                     <?PHP echo $row["loaiao"] ?>
                                 </td>
-                               
-
+                                <td>
+                                    <?PHP echo $row["soluong"] ?>
+                                </td>
                             </tr>
                            
                         <?PHP }

@@ -41,8 +41,8 @@ class sanpham extends ketnoi{
     
     }
     function themsanpham(){
-        $sql = "INSERT INTO `sanpham1`(`masp`, `nhom_id`, `tensp`, `mota`, `dongiacu`, `dongiamoi`,  `enable`, `ghichu`, `diemnoibat`,  `xuatxu`, `ngaydang`, `kichthuoc`, `nguoidang`, `loaiao`)
-    VALUES ('".$this->masanpham."','".$this->nhomid."','".$this->tensanpham."','".$this->mota."','".$this->dongiacu."','".$this->dongiamoi."', '".$this->enable."','".$this->ghichu."','".$this->diemnoibat."', '".$this->xuatxu."', '".$this->ngaydang."','".$this->kichthuoc."','".$this->nguoidang."', '".$this->loaiao."')";
+        $sql = "INSERT INTO `sanpham1`(`masp`, `nhom_id`, `tensp`, `mota`, `dongiacu`, `dongiamoi`,  `enable`, `ghichu`,  `xuatxu`, `ngaydang`, `kichthuoc`,`soluong`, `nguoidang`, `loaiao`)
+    VALUES ('".$this->masanpham."','".$this->nhomid."','".$this->tensanpham."','".$this->mota."','".$this->dongiacu."','".$this->dongiamoi."', '".$this->enable."','".$this->ghichu."', '".$this->xuatxu."', '".$this->ngaydang."','".$this->kichthuoc."','".$this->soluong."','".$this->nguoidang."', '".$this->loaiao."')";
     $result = mysqli_query($this->conn, $sql);
    
     $target_dir1 = "upload/";
@@ -104,7 +104,8 @@ if(move_uploaded_file($_FILES["img1"]["tmp_name"], $targer_file1)){
         `ngaydang`='".$this->ngaydang."',
         `kichthuoc`='".$this->kichthuoc."',
         `nguoidang`='".$this->nguoidang."',
-        `loaiao`='".$this->loaiao."'
+        `loaiao`='".$this->loaiao."',
+        `soluong`='".$this->soluong."'
         WHERE masp = '".$this->masanpham."'";
         $result = mysqli_query($this->conn, $sql);
 

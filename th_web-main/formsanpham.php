@@ -38,7 +38,6 @@
        $sanpham->dongiamoi = isset($_POST['dongiamoi']) ? $_POST['dongiamoi'] : '';
        $sanpham->enable = isset($_POST['enable']) ? $_POST['enable'] : 0;
        $sanpham->soluong = isset($_POST['soluong']) ? $_POST['soluong'] : '';
-       $sanpham->diemnoibat = isset($_POST['diemnoibat']) ? $_POST['diemnoibat'] : '';
        $sanpham->xuatxu= isset($_POST['xuatxu']) ? $_POST['xuatxu'] : '';
        $sanpham->ngaydang = isset($_POST['ngaydang']) ? $_POST['ngaydang'] : '';
        $sanpham->kichthuoc = isset($_POST['kichthuoc']) ? $_POST['kichthuoc'] : '';

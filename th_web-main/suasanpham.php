@@ -29,6 +29,7 @@
         $sanpham->kichthuoc = isset($_POST['kichthuoc']) ? $_POST['kichthuoc'] : '';
         $sanpham->nguoidang = isset($_POST['nguoidang']) ? $_POST['nguoidang'] : '';
         $sanpham->loaiao = isset($_POST['loaiao']) ? $_POST['loaiao'] : '';
+        $sanpham->soluong = isset($_POST['soluong']) ? $_POST['soluong'] : '';
         // $sanpham->tenanhcu = $row['img'];
         $sanpham->updatesanpham();
     }
@@ -120,6 +121,10 @@
             <div class="form-group">
                 <label for="tensp">Loại Áo:</label>
                 <input type="text" class="form-control" name="loaiao" value="<?php echo $row["loaiao"] ?> ">
+            </div>
+            <div class="form-group">
+                <label for="tensp">Số Lượng:</label>
+                <input type="text" class="form-control" name="soluong" value="<?php echo $row["soluong"] ?> ">
             </div>
             <div class="form-group form-check">s
                 
